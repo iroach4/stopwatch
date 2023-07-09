@@ -8,11 +8,7 @@ running = False
 def start_timer():
     global time_object
     global running
-    if not running and elapsed_time == None:
-        time_object = time.time()
-        running = True
-        update_time()
-    if not running and elapsed_time != None:
+    if not running:
         time_object = time.time()
         running = True
         update_time()
